@@ -1,0 +1,52 @@
+/* Сброс отступов и границ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Упрощает работу с шириной/высотой */
+}
+
+/* Убрать дефолтные стили списков */
+ul, ol {
+  list-style: none;
+}
+
+/* Убрать стили ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Убрать дефолтные стили кнопок и полей ввода */
+button, input, textarea, select {
+  background: none;
+  border: none;
+  font: inherit;
+  outline: none;
+  appearance: none; /* Убирает специфичные стили для некоторых браузеров */
+}
+
+/* Сброс стилей для медиа-элементов */
+img, video, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Упрощаем работу с таблицами, пусть будет */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Сброс дефолтного underline у ссылок при фокусе */
+a:focus {
+  text-decoration: none;
+}
+
+/* Опционально: делаем body предсказуемым */
+body {
+  line-height: 1; /* Чтобы высота строки равнялась высоте шрифта */
+  -webkit-font-smoothing: antialiased; /* Сглаживание шрифтов в WebKit */
+}
