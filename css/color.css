@@ -1,0 +1,35 @@
+/* Палитра цветов на странице */
+:root {
+  /* Основные цвета */
+  --color-accent: #fba009;       /* Акцент: кнопки, выделенный текст */
+  --color-background: #252525;   /* Основной фон */
+  --color-footer: #3b3b3b;       /* Фон футера */
+  
+  /* Текст */
+  --text-large: #ffffff;         /* Крупный текст */
+  --text-small: #f0f0f0;         /* Мелкий текст */
+  --text-muted: #e5e5e5;         /* Доп. текст */
+}
+/* ------------------------------- */
+
+/* Основные цвета */
+.accent {
+    color: var(--color-accent);
+}
+.bg-main {
+    background-color: var(--color-background);
+}
+.bg-footer {
+    background-color: var(--color-footer);
+}
+
+/* Текст */
+.text-large {
+    color: var(--text-large);
+}
+.text-small {
+    color: var(--text-small);
+}
+.text-muted {
+    color: var(--text-muted);
+}
