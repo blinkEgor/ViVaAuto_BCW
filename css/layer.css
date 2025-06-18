@@ -8,8 +8,13 @@
 }
 
 .overlay {
-    position: fixed;
+    position: absolute;
     z-index: 0;
+}
+
+.solaris-car {
+    position: absolute;
+    z-index: 2;
 }
 
 .content {

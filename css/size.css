@@ -15,14 +15,19 @@ body {
 }
 
 .overlay {
-    top: 0;
+    top: -210px;
     left: 0;
     width: 1920px;
     height: 1080px;
+    clip-path: inset(210px 0 160px 0);
+}
+
+.solaris-car {
+    top: 200px;
+    right: 200px;
 }
 
 .content {
-    z-index: 1;
     min-width: 1920px;
     min-height: 1600px;
 }
