@@ -13,7 +13,7 @@
 /* ------------------------------- */
 
 /* Основные цвета */
-.accent {
+.text-accent {
     color: var(--color-accent);
 }
 .bg-accent {
@@ -42,4 +42,8 @@
 }
 .overlay {
     background-color: rgba(0, 0, 0, 0.25);
+}
+
+.bg-header {
+    background-color: rgba(0, 0, 0, 0.50);
 }
