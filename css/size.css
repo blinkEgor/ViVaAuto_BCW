@@ -2,8 +2,8 @@
 
 
 body {
-    min-width: 1920px;
-    min-height: 1600px;
+    width: 1920px;
+    height: 1600px;
 }
 
 .background-image {
@@ -23,8 +23,10 @@ body {
 }
 
 .solaris-car {
-    top: 200px;
-    right: 200px;
+    top: 270px;
+    right: 175px;
+    width: 814px;
+    height: 427px;
 }
 
 .content {

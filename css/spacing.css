@@ -2,7 +2,7 @@
     --gap-no: 0;
     --gap-li: 5px;
     --gap-sm: 10px;
-    --gap-md: 20px;
+    --gap-md: 15px;
     --gap-lg: 30px;
 }
 
@@ -22,10 +22,10 @@
 
 /* Внутренние отступы */
 .p-no { padding: var(--gap-no); }
-.m-li { padding: var(--gap-li); }
-.m-sm { padding: var(--gap-sm); }
-.m-md { padding: var(--gap-md); }
-.m-lg { padding: var(--gap-lg); }
+.p-li { padding: var(--gap-li); }
+.p-sm { padding: var(--gap-sm); }
+.p-md { padding: var(--gap-md); }
+.p-lg { padding: var(--gap-lg); }
 
 /* Отдельные внешние отступы */
 /* Нет */
@@ -80,3 +80,10 @@
 .pr-lg { padding-right: var(--gap-lg); }
 .pb-lg { padding-bottom: var(--gap-lg); }
 .pl-lg { padding-left: var(--gap-lg); }
+
+/* Закругление углов */
+.br-no { border-radius: var(--gap-no); }
+.br-li { border-radius: var(--gap-li); }
+.br-sm { border-radius: var(--gap-sm); }
+.br-md { border-radius: var(--gap-md); }
+.br-lg { border-radius: var(--gap-lg); }
