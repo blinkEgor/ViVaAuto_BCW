@@ -21,3 +21,7 @@
     position: relative;
     z-index: 1;
 }
+
+.main-info {
+    position: relative;
+}

@@ -35,7 +35,13 @@ body {
 }
 
 .main-info {
-    width: 1920px;
+    width: max-content;
+    left: 30%;
+    top: 200px;
+}
+
+#sign-up {
+    width: max-content;
 }
 
 .brand-logos {
