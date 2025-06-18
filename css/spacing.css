@@ -4,6 +4,8 @@
     --gap-sm: 10px;
     --gap-md: 15px;
     --gap-lg: 30px;
+    --gap-xl: 45px;
+    --gap-xxl: 60px;
 }
 
 /* Отступы внутри блока */
@@ -12,6 +14,8 @@
 .gap-sm { gap: var(--gap-sm); }
 .gap-md { gap: var(--gap-md); }
 .gap-lg { gap: var(--gap-lg); }
+.gap-xl { gap: var(--gap-xl); }
+.gap-xxl { gap: var(--gap-xxl); }
 
 /* Внешние отступы */
 .m-no { margin: var(--gap-no); }
