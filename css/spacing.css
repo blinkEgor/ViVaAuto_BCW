@@ -6,6 +6,13 @@
     --gap-lg: 30px;
 }
 
+/* Отступы внутри блока */
+.gap-no { gap: var(--gap-no); }
+.gap-li { gap: var(--gap-li); }
+.gap-sm { gap: var(--gap-sm); }
+.gap-md { gap: var(--gap-md); }
+.gap-lg { gap: var(--gap-lg); }
+
 /* Внешние отступы */
 .m-no { margin: var(--gap-no); }
 .m-li { margin: var(--gap-li); }
