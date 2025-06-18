@@ -12,13 +12,24 @@
 }
 /* ------------------------------- */
 
-/* Основные цвета */
-.text-accent {
-    color: var(--color-accent);
-}
 .bg-accent {
     background-color: var(--color-accent);
 }
+
+/* Текст */
+.color-text-accent {
+    color: var(--color-accent);
+}
+.color-text-large {
+    color: var(--text-large);
+}
+.color-text-small {
+    color: var(--text-small);
+}
+.color-text-muted {
+    color: var(--text-muted);
+}
+
 .bg-main {
     background-color: var(--color-background);
 }
@@ -26,20 +37,6 @@
     background-color: var(--color-footer);
 }
 
-/* Текст */
-.text-large {
-    color: var(--text-large);
-}
-.text-small {
-    color: var(--text-small);
-}
-.text-muted {
-    color: var(--text-muted);
-}
-
-.background-image {
-    background-color: var(--color-background);
-}
 .overlay {
     background-color: rgba(0, 0, 0, 0.25);
 }
