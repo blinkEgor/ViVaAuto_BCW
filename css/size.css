@@ -1,5 +1,22 @@
 /* Переменные для статических размеров, без адаптации */
-
+:root {
+    /* Размеры для карточек */
+    --size-card-li: 50px;
+    --size-card-sm: 100px;
+    --size-card-md: 150px;
+    --size-card-lg: 220px;
+}
+/* Реализация размеров карточки */
+/* Ширина */
+.w-card-li { width: var(--size-card-li); }
+.w-card-sm { width: var(--size-card-sm); }
+.w-card-md { width: var(--size-card-md); }
+.w-card-lg { width: var(--size-card-lg); }
+/* Высота */
+.h-card-li { height: var(--size-card-li); }
+.h-card-sm { height: var(--size-card-sm); }
+.h-card-md { height: var(--size-card-md); }
+.h-card-lg { height: var(--size-card-lg); }
 
 body {
     width: 1920px;

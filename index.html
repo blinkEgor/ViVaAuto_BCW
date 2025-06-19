@@ -19,19 +19,17 @@
     <!-- Фоновое изображение -->
     <div class="background-image"></div>
 
-    <!-- Машина -->
-    <div class="solaris-car">
-        <img src="assets/images/auto-img.png" alt="Solaris car">
-    </div>
-
     <!-- Основной контент -->
     <div class="content block">
+        <!-- Машина, она тут чтобы понятно было от какого контенера он берет значения отступов - от .content -->
+         <!-- !!! Если будет создаваться адаптив, то её нужно будет переместить в подходящее место !!! -->
+        <img class="solaris-car" src="assets/images/auto-img.png" width="814" height="427" alt="Solaris car">
 
         <!-- Шапка страницы -->
         <header class="bg-header flex jc-around ai-center">
             <!-- Логотип -->
             <div class="logo flex gap-sm m-li">
-                <img class="icon logo-icon" src="assets/icons/logo-icon.png" alt="logo icon ViVaAuto">
+                <img class="icon logo-icon" src="assets/icons/logo-icon.png" width="62" height="53" alt="logo icon ViVaAuto">
                 <p class="color-text-large text-display"><span class="color-text-accent">ViVa</span>Auto</p>
             </div>
             <!-- навигационная панель -->
@@ -55,54 +53,54 @@
 
             <!-- Иконки логотипов -->
             <section class="brand-logos m-lg">
-                <ul class="flex jc-center gap-xxl">
-                    <li><img src="assets/icons/logos/logo-1.png"></li>
-                    <li><img src="assets/icons/logos/logo-2.png"></li>
-                    <li><img src="assets/icons/logos/logo-3.png"></li>
-                    <li><img src="assets/icons/logos/logo-4.png"></li>
-                    <li><img src="assets/icons/logos/logo-5.png"></li>
-                    <li><img src="assets/icons/logos/logo-6.png"></li>
+                <ul class="flex jc-center gap-xxxl">
+                    <li><img src="assets/icons/logos/logo-1.png" width="202" height="50"></li>
+                    <li><img src="assets/icons/logos/logo-2.png" width="149" height="50"></li>
+                    <li><img src="assets/icons/logos/logo-3.png" width="77" height="50"></li>
+                    <li><img src="assets/icons/logos/logo-4.png" width="190" height="50"></li>
+                    <li><img src="assets/icons/logos/logo-5.png" width="218" height="50"></li>
+                    <li><img src="assets/icons/logos/logo-6.png" width="93" height="50"></li>
                 </ul>
             </section>
 
             <!-- Описание сервисов -->
-            <section class="services">
+            <section class="services flex col ai-center">
                 <h2 class="color-text-large text-display">Услуги</h2>
-                <ul>
-                    <li>
-                        <img src="assets/icons/services/suspension-repair-icon.png">
+                <ul class="flex m-lg">
+                    <li class="m-lg w-card-lg flex col gap-sm ai-center ta-center">
+                        <img src="assets/icons/services/suspension-repair-icon.png" width="73" height="100">
                         <h3 class="color-text-large text-subhead font-bold">Ремонт подвески</h3>
                         <p class="color-text-small text-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
                     </li>
-                    <li>
-                        <img src="assets/icons/services/light-adjustment-icon.png">
+                    <li class="m-lg w-card-lg flex col gap-sm ai-center ta-center">
+                        <img src="assets/icons/services/light-adjustment-icon.png" width="91" height="100">
                         <h3 class="color-text-large text-subhead font-bold">Регулировка света</h3>
                         <p class="color-text-small text-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do копия</p>
                     </li>
-                    <li>
-                        <img src="assets/icons/services/brake-replacement-icon.png">
+                    <li class="m-lg w-card-lg flex col gap-sm ai-center ta-center">
+                        <img src="assets/icons/services/brake-replacement-icon.png" width="99" height="99">
                         <h3 class="color-text-large text-subhead font-bold">Замена колодок</h3>
                         <p class="color-text-small text-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do копия 2</p>
                     </li>
-                    <li>
-                        <img src="assets/icons/services/maintenance-icon.png">
+                    <li class="m-lg w-card-lg flex col gap-sm ai-center ta-center">
+                        <img src="assets/icons/services/maintenance-icon.png" width="95" height="100">
                         <h3 class="color-text-large text-subhead font-bold">Проведение ТО</h3>
                         <p class="color-text-small text-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do копия 3</p>
                     </li>
-                    <li>
-                        <img src="assets/icons/services/lorem-ipsum-icon.png">
+                    <li class="m-lg w-card-lg flex col gap-sm ai-center ta-center">
+                        <img src="assets/icons/services/lorem-ipsum-icon.png" width="121" height="100">
                         <h3 class="color-text-large text-subhead font-bold">Lorem ipsum</h3>
                         <p class="color-text-small text-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
                     </li>
                 </ul>
-                <button class="color-text-large color-bg-accent text-heading">Записаться</button>
+                <button id="sign-up" class="color-text-large color-bg-accent text-heading p-sm pl-lg pr-lg br-md mb-lg">Записаться</button>
             </section>
         </main>
 
         <footer class="bg-footer">
             <!-- Логотип -->
             <div class="logo">
-                <img class="icon logo-icon" src="assets/icons/logo-icon.png" alt="logo icon ViVaAuto">
+                <img class="icon logo-icon" src="assets/icons/logo-icon.png" width="62" height="53" alt="logo icon ViVaAuto">
                 <p class="color-text-large text-display"><span class="color-text-accent">ViVa</span>Auto</p>
             </div>
 
@@ -112,9 +110,9 @@
                     <li class="color-text-muted text-subhead font-light">Телефон: <button id="phone-number" class="color-text-large font-bold">+375 33 667 67 09</button></li>
                 </ul>
                 <ul>
-                    <li><a href=""><img src="assets/icons/social/viber-icon.png"></a></li>
-                    <li><a href=""><img src="assets/icons/social/telegram-icon.png"></a></li>
-                    <li><a href=""><img src="assets/icons/social/instagram-icon.png"></a></li>
+                    <li><a href=""><img src="assets/icons/social/viber-icon.png" width="80" height="80"></a></li>
+                    <li><a href=""><img src="assets/icons/social/telegram-icon.png" width="80" height="80"></a></li>
+                    <li><a href=""><img src="assets/icons/social/instagram-icon.png" width="80" height="80"></a></li>
                 </ul>
             </div>
         </footer>
