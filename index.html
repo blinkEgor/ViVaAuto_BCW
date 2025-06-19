@@ -1,8 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <!-- Кодировка страницы -->
+     <!-- Это стандарт для кирилицы -->
     <meta charset="UTF-8">
+
+    <!-- Заголовок страницы в поисковиках -->
+     <!-- Этот текст будет виден в поисковой системе, как имя для ссылки на страницу -->
+    <title>ВиВаАвто — Ремонт и обслуживание автомобилей в Минске | ViVaAuto - Официальная страница</title>
+
+    <!-- Иконка страницы, видна в разделе фкладок в браузере -->
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <!-- Описание в сниппете Google -->
+     <!-- В контент писать то что бизнес предлагает и делает -->
+    <meta name="description" content="ViVaAuto — автосервис в Минске. Профессиональный ремонт подвески, замена колодок, ТО, регулировка света. Запишитесь прямо сейчас">
+    
+    <!-- Указывает часы работы -->
+     <!-- УКАЗАТЬ АКТУЛЬНЫЙ ГРАФИК РАБОТЫ -->
+    <meta itemprop="openingHours" content="Mo-Fr 09:00-18:00">
+
+    <!-- Для соцсетей OpenGraph -->
+     <!-- Текст, который отображается в качестве ссылки на страницу, когда кто-то делится ею в социальных сетях -->
+    <meta property="og:title" content="ViVaAuto — Ремонт и обслуживание авто">
+     <!-- Превьюшка при расшаривании -->
+      <!-- !!! ОБЯЗАТЕЛЬНО ДОБАВИТЬ ЕЁ И ЗАМЕНИТЬ "ДОМЕН" НА НАСТОЯЩЕЕ ИМЯ ДОМЕНЯ, ЧТОБЫ ВНЕШНИЕ ССЫЛКИ ВИДЕЛИ ПРЕВЬЮШКУ (размер: 1200×630 px) -->
+    <meta property="og:image" content="https://blinkegor.github.io/ViVaAuto_BCW/assets/images/og-preview.png">
+     <!-- Постоянная ссылка на страницу (нужна для защиты от копирования) -->
+      <!-- !!! ОБЯЗАТЕЛЬНО ЗАМЕНИТЬ "ДОМЕН" НА НАСТОЯЩЕЕ ИМЯ ДОМЕНА -->
+    <meta property="og:url" content="https://blinkegor.github.io/ViVaAuto_BCW">
+
+    <!-- Для адаптива в будущем -->
+     <!-- Используется для управления отображением веб-страницы на различных устройствах, в частности, на мобильных телефонах -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Ссылки на стили -->
     <link rel="stylesheet" href="css/reset-defaults.css">
     <link rel="stylesheet" href="css/color.css">
     <link rel="stylesheet" href="css/size.css">
@@ -10,9 +42,13 @@
     <link rel="stylesheet" href="css/layer.css">
     <link rel="stylesheet" href="css/spacing.css">
     <link rel="stylesheet" href="css/layout.css">
-    <title>ViVaAuto</title>
 </head>
-<body class="bg-main">
+<body class="bg-main" itemscope itemtype="http://schema.org/AutoRepair">
+    <!-- Помечает сайт как «Автосервис» для поисковиков -->
+    <meta itemprop="name" content="ViVaAuto">
+    <meta itemprop="address" content="г.Минск, 1-й Твёрдый переулок, 11А/1">
+    <meta itemprop="telephone" content="+375336676709">
+
     <!-- Затемняющий оверлей -->
     <div class="overlay"></div>
 
@@ -23,13 +59,13 @@
     <div class="content block">
         <!-- Машина, она тут чтобы понятно было от какого контенера он берет значения отступов - от .content -->
          <!-- !!! Если будет создаваться адаптив, то её нужно будет переместить в подходящее место !!! -->
-        <img class="solaris-car" src="assets/images/auto-img.png" width="814" height="427" alt="Solaris car">
+        <img class="solaris-car" src="assets/images/auto-img.png" width="814" height="427" alt="Solaris car - изображение машины, декоративный элемент страницы" loading="lazy">
 
         <!-- Шапка страницы -->
         <header class="bg-header flex jc-around ai-center">
             <!-- Логотип -->
             <div class="logo flex gap-sm m-li">
-                <img class="icon logo-icon" src="assets/icons/logo-icon.png" width="62" height="53" alt="logo icon ViVaAuto">
+                <img class="icon logo-icon" src="assets/icons/logo-icon.png" width="62" height="53" alt="ViVaAuto - иконка логотипа - разделенное пополам машина и шестеренка" loading="lazy">
                 <p class="color-text-large text-display"><span class="color-text-accent">ViVa</span>Auto</p>
             </div>
             <!-- навигационная панель -->
@@ -54,12 +90,13 @@
             <!-- Иконки логотипов -->
             <section class="brand-logos m-lg">
                 <ul class="flex jc-center gap-xxxl">
-                    <li><img src="assets/icons/logos/logo-1.png" width="202" height="50"></li>
-                    <li><img src="assets/icons/logos/logo-2.png" width="149" height="50"></li>
-                    <li><img src="assets/icons/logos/logo-3.png" width="77" height="50"></li>
-                    <li><img src="assets/icons/logos/logo-4.png" width="190" height="50"></li>
-                    <li><img src="assets/icons/logos/logo-5.png" width="218" height="50"></li>
-                    <li><img src="assets/icons/logos/logo-6.png" width="93" height="50"></li>
+                    <!-- !!! НЕ ЗАБУДЬ ПРОПИСАТЬ АЛЬТЫ -->
+                    <li><img src="assets/icons/logos/logo-1.png" width="202" height="50" alt="" loading="lazy"></li>
+                    <li><img src="assets/icons/logos/logo-2.png" width="149" height="50" alt="" loading="lazy"></li>
+                    <li><img src="assets/icons/logos/logo-3.png" width="77" height="50" alt="" loading="lazy"></li>
+                    <li><img src="assets/icons/logos/logo-4.png" width="190" height="50" alt="" loading="lazy"></li>
+                    <li><img src="assets/icons/logos/logo-5.png" width="218" height="50" alt="" loading="lazy"></li>
+                    <li><img src="assets/icons/logos/logo-6.png" width="93" height="50" alt="" loading="lazy"></li>
                 </ul>
             </section>
 
@@ -68,27 +105,27 @@
                 <h2 class="color-text-large text-display">Услуги</h2>
                 <ul class="flex m-lg">
                     <li class="m-lg w-card-lg flex col gap-sm ai-center ta-center">
-                        <img src="assets/icons/services/suspension-repair-icon.png" width="73" height="100">
+                        <img src="assets/icons/services/suspension-repair-icon.png" width="73" height="100" alt="Иконка которая симвализирует услугу - ремонт подвески" loading="lazy">
                         <h3 class="color-text-large text-subhead font-bold">Ремонт подвески</h3>
                         <p class="color-text-small text-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
                     </li>
                     <li class="m-lg w-card-lg flex col gap-sm ai-center ta-center">
-                        <img src="assets/icons/services/light-adjustment-icon.png" width="91" height="100">
+                        <img src="assets/icons/services/light-adjustment-icon.png" width="91" height="100" alt="Иконка которая симвализирует услугу - регулировка света" loading="lazy">
                         <h3 class="color-text-large text-subhead font-bold">Регулировка света</h3>
                         <p class="color-text-small text-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do копия</p>
                     </li>
                     <li class="m-lg w-card-lg flex col gap-sm ai-center ta-center">
-                        <img src="assets/icons/services/brake-replacement-icon.png" width="99" height="99">
+                        <img src="assets/icons/services/brake-replacement-icon.png" width="99" height="99" alt="Иконка которая симвализирует услугу - замена колодок" loading="lazy">
                         <h3 class="color-text-large text-subhead font-bold">Замена колодок</h3>
                         <p class="color-text-small text-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do копия 2</p>
                     </li>
                     <li class="m-lg w-card-lg flex col gap-sm ai-center ta-center">
-                        <img src="assets/icons/services/maintenance-icon.png" width="95" height="100">
+                        <img src="assets/icons/services/maintenance-icon.png" width="95" height="100" alt="Иконка которая симвализирует услугу - проведение ТО" loading="lazy">
                         <h3 class="color-text-large text-subhead font-bold">Проведение ТО</h3>
                         <p class="color-text-small text-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do копия 3</p>
                     </li>
                     <li class="m-lg w-card-lg flex col gap-sm ai-center ta-center">
-                        <img src="assets/icons/services/lorem-ipsum-icon.png" width="121" height="100">
+                        <img src="assets/icons/services/lorem-ipsum-icon.png" width="121" height="100" alt="Иконка которая симвализирует услугу - lorem ipsum" loading="lazy">
                         <h3 class="color-text-large text-subhead font-bold">Lorem ipsum</h3>
                         <p class="color-text-small text-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
                     </li>
@@ -100,19 +137,19 @@
         <footer class="bg-footer flex jc-around pt-lg pb-lg">
             <!-- Логотип -->
             <div class="logo flex gap-sm m-li">
-                <img class="icon logo-icon size-max-c" src="assets/icons/logo-icon.png" width="62" height="53" alt="logo icon ViVaAuto">
+                <img class="icon logo-icon size-max-c" src="assets/icons/logo-icon.png" width="62" height="53" alt="ViVaAuto - иконка логотипа - разделенное пополам машина и шестеренка" loading="lazy">
                 <p class="color-text-large text-display"><span class="color-text-accent">ViVa</span>Auto</p>
             </div>
 
             <div class="contacts flex col gap-sm">
                 <ul>
                     <li class="color-text-muted text-subhead font-light">Адрес: <button id="address" class="color-text-large font-bold">г.Минск, 1-й Твёрдый переулок, 11А/1</button></li>
-                    <li class="color-text-muted text-subhead font-light">Телефон: <button id="phone-number" class="color-text-large font-bold">+375 33 667 67 09</button></li>
+                    <li class="color-text-muted text-subhead font-light">Телефон: <button id="phone-number" class="color-text-large font-bold" itemprop="telephone">+375 33 667 67 09</button></li>
                 </ul>
                 <ul class="flex gap-sm">
-                    <li><a href=""><img src="assets/icons/social/viber-icon.png" width="80" height="80"></a></li>
-                    <li><a href=""><img src="assets/icons/social/telegram-icon.png" width="80" height="80"></a></li>
-                    <li><a href=""><img src="assets/icons/social/instagram-icon.png" width="80" height="80"></a></li>
+                    <li><a href=""><img src="assets/icons/social/viber-icon.png" width="80" height="80" alt="Иконка социальной сети - Viber" loading="lazy"></a></li>
+                    <li><a href=""><img src="assets/icons/social/telegram-icon.png" width="80" height="80" alt="Иконка социальной сети - Telegram" loading="lazy"></a></li>
+                    <li><a href=""><img src="assets/icons/social/instagram-icon.png" width="80" height="80" alt="Иконка социальной сети - Instagram" loading="lazy"></a></li>
                 </ul>
             </div>
         </footer>
