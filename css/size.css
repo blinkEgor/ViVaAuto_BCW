@@ -5,6 +5,9 @@
     --size-card-sm: 100px;
     --size-card-md: 150px;
     --size-card-lg: 220px;
+
+    /* Размер свой */
+    --size-max-c: max-content;
 }
 /* Реализация размеров карточки */
 /* Ширина */
@@ -18,10 +21,16 @@
 .h-card-md { height: var(--size-card-md); }
 .h-card-lg { height: var(--size-card-lg); }
 
-body {
-    width: 1920px;
-    height: 1600px;
+/* Реализация своих размеров */
+/* Общий */
+.size-max-c {
+    width: var(--size-max-c);
+    height: var(--size-max-c);
 }
+/* Ширина */
+.w-max-c { width: var(--size-max-c); }
+/* Высота */
+.h-max-c { height: var(--size-max-c); }
 
 .background-image {
     top: -210px;
@@ -48,7 +57,7 @@ body {
 
 .content {
     width: 1920px;
-    height: 1600px;
+    /* height: 1600px; */
 }
 
 .main-info {
