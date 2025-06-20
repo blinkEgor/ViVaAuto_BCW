@@ -18,6 +18,9 @@
     --color-viber: #665cac;
     --color-telegram: #0088cc;
     --color-instagram: #E4405F;
+
+    /* Hover */
+    --color-hover: #b686f0;
 }
 /* ------------------------------- */
 
@@ -75,4 +78,10 @@
     background: linear-gradient(-135deg, var(--color-pink), var(--color-purple));
     /* -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
+}
+
+.hover:hover {
+    background: var(--color-hover);
+    color: var(--text-large);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
 }

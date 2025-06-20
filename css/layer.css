@@ -25,3 +25,12 @@
 .main-info {
     position: relative;
 }
+
+/* Сдвиг вверх */
+.hover:hover {
+    transform: translateY(-2px);
+}
+/* Эффект нажатия */
+.hover:active {
+    transform: translateY(1px);
+}
