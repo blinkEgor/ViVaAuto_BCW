@@ -14,7 +14,13 @@
 .jc-center { justify-content: center; }
 .jc-between { justify-content: space-between; }
 .jc-around { justify-content: space-around; }
+.jc-start { justify-content: flex-start; }
+.jc-end { justify-content: flex-end; }
 
 .ai-center { align-items: center; }
+.ai-start { align-items: flex-start; }
+.ai-end { align-items: flex-end; }
 
 .ta-center { text-align: center; }
+.ta-start { text-align: start; }
+.ta-end { text-align: end; }
