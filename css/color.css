@@ -9,6 +9,15 @@
     --text-large: #ffffff;         /* Крупный текст */
     --text-small: #f0f0f0;         /* Мелкий текст */
     --text-muted: #e5e5e5;         /* Доп. текст */
+
+    /* Перекраска иконок */
+    /* Лого */
+    --color-pink: #efbad4;
+    --color-purple: #a76af2;
+    /* Соцсети */
+    --color-viber: #665cac;
+    --color-telegram: #0088cc;
+    --color-instagram: #E4405F;
 }
 /* ------------------------------- */
 
@@ -43,4 +52,27 @@
 
 .bg-header {
     background-color: rgba(0, 0, 0, 0.50);
+}
+
+/* Фильтры для иконок */
+.icon-viber {
+    filter: invert(9%) sepia(99%) saturate(6054%) hue-rotate(268deg) brightness(95%) contrast(101%);
+    /* filter: brightness(1) sepia(1) hue-rotate(260deg) saturate(8); */
+    /* filter: brightness(0.9) sepia(1) hue-rotate(260deg) saturate(6); */
+}
+.icon-telegram {
+    filter: invert(48%) sepia(89%) saturate(2476%) hue-rotate(166deg) brightness(100%) contrast(101%);
+    /* filter: brightness(1) sepia(1) hue-rotate(165deg) saturate(15); */
+    /* filter: brightness(0.9) sepia(1) hue-rotate(165deg) saturate(10); */
+}
+.icon-instagram {
+    filter: invert(26%) sepia(89%) saturate(3768%) hue-rotate(327deg) brightness(100%) contrast(101%);
+    /* filter: brightness(1) sepia(0.5) hue-rotate(-50deg) saturate(10); */
+    /* filter: brightness(0.8) sepia(0.3) hue-rotate(-50deg) saturate(5); */
+}
+.social-icon { transition: filter 0.3s ease; }
+.logo-gradient {
+    background: linear-gradient(-135deg, var(--color-pink), var(--color-purple));
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: transparent;
 }
